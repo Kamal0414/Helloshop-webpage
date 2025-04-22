@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>helloshop - Menu</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <a href="home.html" class="logo">hello<span>shop</span></a>
+                
+                <nav class="desktop-nav">
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="menu.html" class="active">Menu</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="nav-icons">
+                    <a href="cart.html" class="cart-icon">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                    <button class="menu-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="mobile-nav">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="menu.html" class="active">Menu</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="menu-section">
+            <div class="container">
+                <div class="section-header">
+                    <h1>Our Menu</h1>
+                    <p>Discover our handcrafted beverages and freshly baked pastries.</p>
+                </div>
+
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-category="all">
+                        <i class="fas fa-shopping-basket"></i> All
+                    </button>
+                    <button class="filter-btn" data-category="coffee">
+                        <i class="fas fa-coffee"></i> Coffee
+                    </button>
+                    <button class="filter-btn" data-category="tea">
+                        <i class="fas fa-leaf"></i> Tea
+                    </button>
+                    <button class="filter-btn" data-category="pastries">
+                        <i class="fas fa-cookie"></i> Pastries
+                    </button>
+                </div>
+
+                <div class="menu-grid" id="menu-items">
+                    <!-- Menu items will be dynamically inserted here by JavaScript -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3>hello<span>shop</span></h3>
+                    <p>Where every cup tells a story and every sip is an experience.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="cart.html">Cart</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-hours">
+                    <h4>Hours</h4>
+                    <ul>
+                        <li>Monday - Friday: 7am - 8pm</li>
+                        <li>Saturday: 8am - 8pm</li>
+                        <li>Sunday: 8am - 6pm</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <address>
+                        <p>Coffee Street</p>
+                        <p>Hyderabad, 500090</p>
+                        <p>Phone: 1234567890</p>
+                        <p>Email: welcome@helloshop.com</p>
+                    </address>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> helloshop. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="menu.js"></script>
+    <script src="cart.js"></script>
+</body>
+</html>
